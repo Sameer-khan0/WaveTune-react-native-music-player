@@ -1,9 +1,7 @@
 # OSX
-#
 .DS_Store
 
 # Xcode
-#
 build/
 *.pbxuser
 !default.pbxuser
@@ -23,7 +21,6 @@ DerivedData
 **/.xcode.env.local
 
 # Android/IntelliJ
-#
 build/
 .idea
 .gradle
@@ -35,13 +32,16 @@ local.properties
 !debug.keystore
 
 # node.js
-#
 node_modules/
 npm-debug.log
 yarn-error.log
+*.log
+package-lock.json
+yarn.lock
+**/.env
+**/.env.*
 
 # fastlane
-#
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
@@ -57,6 +57,9 @@ yarn-error.log
 
 # Ruby / CocoaPods
 **/Pods/
+.vscode/
+.idea/
+*.xcworkspace
 /vendor/bundle/
 
 # Temporary files created by Metro to check the health of the file watcher
@@ -72,3 +75,18 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Miscellaneous
+*.swp               # Vim swap files
+*.swo               # Vim swap files
+*.sublime-workspace # Sublime Text workspace files
+*.sublime-project   # Sublime Text project files
+*.vscode/           # VSCode workspace and settings
+*.log               # Log files
+*.bak               # Backup files
+*.tmp               # Temporary files
+*.pid               # PID files
+*.db                # Database files
+
+# macOS specific files
+.idea/

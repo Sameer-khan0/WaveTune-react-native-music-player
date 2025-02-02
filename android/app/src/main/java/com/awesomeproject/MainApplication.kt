@@ -1,4 +1,4 @@
-package com.awesomeproject
+package com.waveune
 
 import android.app.Application
 import com.facebook.react.PackageList
